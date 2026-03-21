@@ -1,7 +1,10 @@
 # 业务组件化 · OpenClaw（小龙虾）· 小程序 OTC Demo — 对话备份
 
-> 备份日期：2026-03-21  
-> 说明：本文档整理自与业务负责人的连续讨论，用于 [yiyaowang](https://github.com/weic23614-coder/yiyaowang) 仓库留存；含战略方向与首月 Demo 落地约束，**对外请勿泄露敏感运营数据**。
+> 备份日期：2026-03-21（持续更新）  
+> **归档目录**：本仓库 [`组件化/`](https://github.com/weic23614-coder/yiyaowang/tree/main/组件化)（原 `其他项目/` 已更名为 `组件化`）。  
+> Raw 历史链接（旧路径，仅供参考）：[05 旧路径 raw](https://raw.githubusercontent.com/weic23614-coder/yiyaowang/main/%E5%85%B6%E4%BB%96%E9%A1%B9%E7%9B%AE/05-%E4%B8%9A%E5%8A%A1%E7%BB%84%E4%BB%B6%E5%8C%96-OpenClaw-%E5%B0%8F%E7%A8%8B%E5%BA%8FOTC-Demo-%E5%AF%B9%E8%AF%9D%E5%A4%87%E4%BB%BD.md)  
+> **完整聊天式记录**见同目录 [`会话记录-2026-03-21.md`](会话记录-2026-03-21.md)。  
+> **对外请勿泄露敏感运营数据。**
 
 ---
 
