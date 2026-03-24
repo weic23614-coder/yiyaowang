@@ -55,8 +55,8 @@
 ### 4.1 运营后台（`/admin`）
 
 - **库存清单**
-  - Excel 上传更新 `products`；表头含科室、产品编码、商品编码、一级类目、产品名称、生产厂家等。
-  - 列表 **分页（如每页 50）**、搜索、**序号列** 便于阅读。
+  - Excel 上传更新 `products`（按 `sku_id` **覆盖/合并** 同一 SKU）；表头含科室、**主码**（支持「**主码**」「**标品主码**」「产品编码」等，入库 `product_code`）、商品编码、一级类目、产品名称、生产厂家等；**药网 BI 导出表勿用只读解析**（已用常规模式避免少列误报）。
+  - 列表 **分页（如每页 50）**、搜索（含主码/商品编码）、**序号列** 便于阅读。
 - **智能组货**
   - 上传 **待组货 Excel**（可无独立「价格」列，系统占位或按 GMV/销量推导）。
   - **生成组货方案**：支持 **规则优先**（默认）与 **可选百炼逐条推理**（较慢）。
@@ -88,7 +88,7 @@
 ### 4.4 数据与持久化
 
 - **SQLite**（可配置 `APP_DB_PATH`）：`products`、`uploaded_products`、`bundle_recommendations`（含 `package_name`、`main_item_code`、`selected_item_code`、`sales_copy` 等）、`llm_settings`、`ai_usage_logs` 等。
-- **商品编码**：优先 `products.item_code`，其次 `product_code`，否则 `sku_id`。
+- **商品编码**（导出/展示用）：优先 `products.item_code`，其次主码 `product_code`，否则 `sku_id`。
 
 ---
 
